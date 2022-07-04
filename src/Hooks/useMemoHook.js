@@ -2,7 +2,7 @@ import { useState ,useMemo } from "react";
 
 export default function MyUseMemo(){
   const [number,setNumber]=useState(0);
-  const [dark,setDark]=useState(false);
+  const [dark,setDark]=useState(true);
   const doubleNumber = useMemo(()=>{
     return slowFunction(number)
   },[number]);
